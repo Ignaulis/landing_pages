@@ -1,6 +1,8 @@
 import Hero from "./components/hero/hero";
 import Info from "./components/information/info";
 import Navigation from "./components/navigation/navigation";
+import Plan from "./components/plan/plan";
+import Map from "./components/map/map";
 
 export default function Home() {
 
@@ -10,6 +12,9 @@ export default function Home() {
 
       <Hero />
       <Info />
+
+      <Plan />
+      <Map />
     </>
   );
 }

@@ -7,7 +7,7 @@ export default function InfoCard({ info }) {
       <div className="leading-[30px] text-[16px] text-color">{info.para}</div>
       <div className="flex flex-col gap-4">
         {info.checks.map((e) => (
-          <div className="flex gap-2 items-center">
+          <div key={e} className="flex gap-2 items-center">
             <FaCheckCircle className="text-[#2FAB73]" />
             <div className="text-color">{e}</div>
           </div>

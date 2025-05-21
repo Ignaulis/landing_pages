@@ -9,7 +9,7 @@ export default function Navigation() {
         alt="logo"
         className="cursor-pointer"
         width={149}
-        height={36.23}
+        height={36}
       />
       {/* navigation */}
       <nav className="flex gap-10 text-[16px]">
@@ -27,7 +27,7 @@ export default function Navigation() {
             className={`cursor-pointer font-medium ${
               item === "Sign In"
                 ? "text-color transition-custom"
-                : " text-[#F53855] px-8 py-2 rounded-full border border-[#F53855] transition-all duration-200 hover:text-white hover:bg-[#F53855]"
+                : "button-small"
             }`}
           >
             {item}

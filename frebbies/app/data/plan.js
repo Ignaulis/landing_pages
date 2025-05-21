@@ -3,7 +3,7 @@ export const plan = {
     para: `Let's choose the package that is best for you and explore it happily and cheerfully.`,
     plans: [
         {
-            img: '/prices/Free.png',
+            img: '/photos/prices/Free.svg',
             head: 'Free Plan',
             checks: [
                 'Unlimited Bandwitch',
@@ -15,7 +15,7 @@ export const plan = {
             button: 'Select'
         },
         {
-            img: '/prices/Standard.png',
+            img: '/photos/prices/Standard.svg',
             head: 'Standard Plan',
             checks: [
                 'Unlimited Bandwitch',
@@ -31,7 +31,7 @@ export const plan = {
 
         },
         {
-            img: '/prices/Premium.png',
+            img: '/photos/prices/Premium.svg',
             head: 'Premium Plan',
             checks: [
                 'Unlimited Bandwitch',
