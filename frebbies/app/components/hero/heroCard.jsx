@@ -2,7 +2,7 @@ import { heroCard } from "@/app/data/hero";
 
 export default function HeroCard() {
   return (
-    <section className="flex w-full shadow-2xl shadow-[#00000040] bg-white rounded-2xl h-[180px] items-center justify-around gap-10">
+    <section className="flex w-full shadow-2xl shadow-[#00000040] transition-all duration-300 hover:shadow-[#00000020] bg-white rounded-2xl h-[180px] items-center justify-around">
       {heroCard.map((e, index) => (
         <div
           key={e.name}

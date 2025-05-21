@@ -16,20 +16,27 @@ body {
     @apply px-30
 }
 
+/* grey color */
 .text-color {
     @apply text-[#4F5665]
 }
 
-/* button-small */
+/* button-small-nav */
 .button-small {
     @apply text-[#F53855] px-8 py-2 rounded-full border border-[#F53855] transition-all duration-200 hover:text-white hover:bg-[#F53855] font-medium cursor-pointer;
 }
 
-/* header and para */
+/* header and paragraph */
 .head {
     @apply font-bold text-[35px];
 }
 
 .para {
     @apply text-[#4F5665] text-center text-[16px] leading-[30px] w-[550px];
+}
+
+
+/* button custom arrow for slider */
+.custom-arrow-button {
+    @apply w-[60px] h-[60px] border-2 border-[#F53838] rounded-full flex justify-center items-center transition-all duration-200 bg-white text-[#F53838] hover:bg-[#F53838] hover:text-white cursor-pointer;
 }
