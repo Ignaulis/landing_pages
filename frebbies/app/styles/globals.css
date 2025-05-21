@@ -10,3 +10,12 @@ body {
 .transition-custom {
     @apply transition-all duration-300 hover:scale-105;
 }
+
+/* padding for sides */
+.padding-custom-sides {
+    @apply px-30
+}
+
+.text-color {
+    @apply text-[#4F5665]
+}

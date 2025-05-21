@@ -1,5 +1,5 @@
 export const nav = {
-    img: '/photos/Logo.png',
+    img: '/photos/Logo.svg',
     nav: [
         'About',
         'Features',
