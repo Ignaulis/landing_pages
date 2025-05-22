@@ -1,21 +1,26 @@
 import { ScrollContext } from "@/app/context/scrollContext";
 import { nav } from "@/app/data/nav";
 import { useContext, useEffect, useState } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
 
 export default function Navigation() {
   const { handleScroll } = useContext(ScrollContext);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 850);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const handlewidth = () => {
+    const handleWidth = () => {
       setIsMobile(window.innerWidth <= 850);
     };
 
-    window.addEventListener("resize", handlewidth);
-    handlewidth();
+    if (typeof window !== "undefined") {
+      handleWidth();
+      window.addEventListener("resize", handleWidth);
+    }
 
     return () => {
-      window.removeEventListener("resize", handlewidth);
+      if (typeof window !== "undefined") {
+        window.removeEventListener("resize", handleWidth);
+      }
     };
   }, []);
 
@@ -28,6 +33,10 @@ export default function Navigation() {
         width={149}
         height={36}
       />
+      <div className={isMobile ? "block" : "hidden"}>
+        <AiOutlineMenu className="scale-150 cursor-pointer transition-all duration-200 hover:scale-160 active:scale-140" />
+      </div>
+
       {/* navigation */}
       <nav
         className={`flex gap-10 text-[16px] ${isMobile ? "hidden" : "block"}`}
@@ -42,6 +51,7 @@ export default function Navigation() {
           </span>
         ))}
       </nav>
+
       {/* signin / signup */}
       <div
         className={`flex items-center gap-10 text-[16px] ${isMobile ? "hidden" : "block"}`}

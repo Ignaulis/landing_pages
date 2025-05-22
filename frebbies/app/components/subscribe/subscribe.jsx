@@ -7,7 +7,7 @@ export default function Subscribe() {
         <h2 className="text-center text-[18px] font-bold sm:text-[24px] md:text-start md:text-[30px] lg:text-[35px]">
           {card.head}
         </h2>
-        <p className="max-w-[550px] text-center text-[12px] leading-[30px] text-[#4F5665] sm:text-[16px] md:text-start">
+        <p className="max-w-[550px] text-center text-[12px] leading-[16px] text-[#4F5665] sm:text-[16px] sm:leading-[30px] md:text-start">
           {card.param}
         </p>
       </div>
