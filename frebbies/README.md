@@ -1,5 +1,7 @@
 # Modern & Minimalist Figma Website – Fully Responsive Design
 
+## [LIVE PREVIEW!](https://landing-pages-eight-sigma.vercel.app/)
+
 A clean and modern website built based on a Figma design. This project is fully responsive across mobile, tablet, and desktop devices, offering a smooth and elegant user experience. Designed with simplicity in mind, it uses modern web technologies and animation libraries to enhance interactivity without compromising minimalism.
 
 ## 🚀 Tech Stack
