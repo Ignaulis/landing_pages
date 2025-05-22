@@ -6,6 +6,7 @@ import Navigation from "./components/navigation/navigation";
 import Plan from "./components/plan/plan";
 import Map from "./components/map/map";
 import Testimonials from "./components/testimonials/testimonials";
+import Subscribe from "./components/subscribe/subscribe";
 
 export default function Home() {
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Map />
 
       <Testimonials />
+      <Subscribe />
     </>
   );
 }

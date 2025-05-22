@@ -23,7 +23,7 @@ body {
 
 /* button-small-nav */
 .button-small {
-    @apply text-[#F53855] px-8 py-2 rounded-full border border-[#F53855] transition-all duration-200 hover:text-white hover:bg-[#F53855] font-medium cursor-pointer;
+    @apply text-[#F53855] px-8 py-2 rounded-full border border-[#F53855] transition-all duration-200 hover:text-white hover:bg-[#F53855] font-medium cursor-pointer active:scale-95;
 }
 
 /* header and paragraph */
@@ -38,5 +38,40 @@ body {
 
 /* button custom arrow for slider */
 .custom-arrow-button {
-    @apply w-[60px] h-[60px] border-2 border-[#F53838] rounded-full flex justify-center items-center transition-all duration-200 bg-white text-[#F53838] hover:bg-[#F53838] hover:text-white cursor-pointer;
+    @apply w-[60px] h-[60px] border-2 border-[#F53838] rounded-full flex justify-center items-center transition-all duration-200 bg-white text-[#F53838] hover:bg-[#F53838] hover:text-white cursor-pointer active:scale-95;
+}
+
+/* hero and subscribe button */
+.hero-button {
+    @apply bg-[#F53838] cursor-pointer font-medium text-white w-[250px] h-[50px] rounded-xl shadow-2xl shadow-[#F5383880] transition-all duration-300 hover:shadow hover:scale-95 active:scale-90;
+}
+
+
+
+/* swiper */
+.custom-swiper .swiper-slide {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.4;
+    transform: scale(0.9);
+}
+
+.custom-swiper .swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.custom-swiper .swiper-slide-next,
+.custom-swiper .swiper-slide-prev {
+    opacity: 0.7;
+    transform: scale(0.90);
+}
+
+
+
+
+
+
+/* border transition with white border  */
+.border-transition {
+    @apply border-2 border-[#DDDDDD] transition-all duration-300 hover:border-2 hover:border-[#F53838];
 }

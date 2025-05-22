@@ -2,7 +2,7 @@ import { FaCheck } from "react-icons/fa";
 
 export default function PlanCard({ data }) {
   return (
-    <div className="flex flex-col justify-around border-2 border-[#DDDDDD] h-[760px] w-[330px] bg-white rounded-2xl">
+    <div className="flex flex-col justify-around h-[760px] w-[330px] bg-white rounded-2xl border-transition">
       <div className="flex flex-col gap-10">
         <div className="flex flex-col items-center gap-4">
           <div className="w-[144px] h-[163px]">

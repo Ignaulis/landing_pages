@@ -2,7 +2,7 @@ import { FaStar } from "react-icons/fa6";
 
 export default function TestimonialCard({ e }) {
   return (
-    <div className="w-[400px] h-[230px] flex bg-white items-center border-2 border-[#DDDDDD] px-4 rounded-xl transition-all duration-300 hover:border-2 hover:border-[#F53838]">
+    <div className="w-max-[200px] h-[230px] flex bg-white items-center border-transition px-4 rounded-xl ">
       <div className="flex flex-col gap-6 justify-end">
         <div className="flex justify-between">
           <div className="flex justify-around gap-4">

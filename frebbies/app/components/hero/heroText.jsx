@@ -13,9 +13,7 @@ export default function HeroText({ hero }) {
 
       {/* button */}
       <div className="">
-        <button className="bg-[#F53838] cursor-pointer font-medium text-white w-[250px] h-[50px] rounded-xl shadow-2xl shadow-[#F5383880] transition-all duration-300 hover:shadow hover:scale-95">
-          {hero.button}
-        </button>
+        <button className="hero-button">{hero.button}</button>
       </div>
     </div>
   );
