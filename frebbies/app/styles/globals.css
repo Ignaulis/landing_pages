@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 body {
-    background-color: #F6F6F6;
+    background-color: #e5e5e5;
     font-family: var(--font-rubik), sans-serif;
 }
 
@@ -82,4 +82,17 @@ body {
 
 .custom-footer-logo {
     @apply flex justify-center items-center rounded-full bg-white shadow-2xl shadow-black/80 p-3;
+}
+
+/* footer hover logos */
+.footer-hover {
+    @apply transition-all duration-300 hover:scale-105;
+}
+
+
+
+/* map-logos-hover */
+.hover-map-logos {
+
+    @apply transition-all duration-300 hover:scale-105;
 }

@@ -20,7 +20,7 @@ export default function TestimonialSlider({ testimonial }) {
           prevEl: ".custom-swiper-prev",
         }}
         modules={[Navigation]}
-        className="w-full custom-swiper"
+        className="w-full custom-swiper cursor-grab"
       >
         {testimonial.cards.map((e, i) => (
           <SwiperSlide

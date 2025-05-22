@@ -6,26 +6,33 @@ import Navigation from "./components/navigation/navigation";
 import Plan from "./components/plan/plan";
 import Map from "./components/map/map";
 import Testimonials from "./components/testimonials/testimonials";
-import Subscribe from "./components/subscribe/subscribe";
 import Footer from "./components/footer/footer";
+import Wrapper from "./utils/wrapper";
+import { ScrollProvider } from "./context/scrollContext";
 
 export default function Home() {
 
   return (
-    <>
-      <Navigation />
+    <ScrollProvider>
+      <Wrapper>
 
-      <Hero />
-      <Info />
+        <Navigation />
 
-      <Plan />
-      <Map />
+        <Hero />
+        <Info />
+      </Wrapper>
 
-      <Testimonials />
-      <Subscribe />
+      <Wrapper>
+
+        <Plan />
+        <Map />
+
+        <Testimonials />
+      </Wrapper>
+
 
 
       <Footer />
-    </>
+    </ScrollProvider>
   );
 }

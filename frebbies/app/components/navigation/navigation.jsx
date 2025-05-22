@@ -1,9 +1,13 @@
+import { ScrollContext } from "@/app/context/scrollContext";
 import { nav } from "@/app/data/nav";
 import Image from "next/image";
+import { useContext } from "react";
 
 export default function Navigation() {
+  const { handleScroll } = useContext(ScrollContext);
+
   return (
-    <section className="flex justify-between items-center padding-custom-sides mt-6">
+    <section className="flex justify-between items-center padding-custom-sides pt-6">
       <Image
         src={nav.img}
         alt="logo"
@@ -14,7 +18,11 @@ export default function Navigation() {
       {/* navigation */}
       <nav className="flex gap-10 text-[16px]">
         {nav.nav.map((e) => (
-          <span className="text-color cursor-pointer transition-custom" key={e}>
+          <span
+            onClick={() => handleScroll(e)}
+            className="text-color cursor-pointer transition-custom"
+            key={e}
+          >
             {e}
           </span>
         ))}

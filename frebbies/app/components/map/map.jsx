@@ -11,7 +11,7 @@ export default function Map() {
       <div className="flex justify-between items-center">
         {mapImages.map((e) => (
           <div key={e} className="w-[200px]">
-            <img src={e} alt={e} />
+            <img className="hover-map-logos" src={e} alt={e} />
           </div>
         ))}
       </div>
