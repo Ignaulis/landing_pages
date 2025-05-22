@@ -6,12 +6,42 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import TestimonialCard from "./testimonialCard";
+import { useEffect, useState } from "react";
 
 export default function TestimonialSlider({ testimonial }) {
+  const [screenSize, setScreenSize] = useState("desktop");
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width <= 650) {
+        setScreenSize("mobile");
+      } else if (width <= 950) {
+        setScreenSize("tablet");
+      } else {
+        setScreenSize("desktop");
+      }
+    };
+
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleResize);
+      handleResize();
+    }
+
+    return () => {
+      if (typeof window !== "undefined") {
+        window.removeEventListener("resize", handleResize);
+      }
+    };
+  }, []);
+
+  const slidesPerView =
+    screenSize === "mobile" ? 1.1 : screenSize === "tablet" ? 2 : 3.1;
+
   return (
-    <div className="flex flex-col items-center mt-20 w-full">
+    <div className="mt-20 flex w-full flex-col items-center">
       <Swiper
-        slidesPerView={3}
+        slidesPerView={slidesPerView}
         spaceBetween={30}
         loop={true}
         centeredSlides
@@ -20,12 +50,12 @@ export default function TestimonialSlider({ testimonial }) {
           prevEl: ".custom-swiper-prev",
         }}
         modules={[Navigation]}
-        className="w-full custom-swiper cursor-grab"
+        className="custom-swiper w-full cursor-grab"
       >
         {testimonial.cards.map((e, i) => (
           <SwiperSlide
             key={i}
-            className="flex items-center justify-center w-full h-full"
+            className="flex h-full w-full items-center justify-center"
           >
             <TestimonialCard e={e} />
           </SwiperSlide>
@@ -33,7 +63,7 @@ export default function TestimonialSlider({ testimonial }) {
       </Swiper>
 
       {/* Bottom Navigation */}
-      <div className="flex justify-center gap-4 mt-6">
+      <div className="mt-6 flex justify-center gap-4">
         <button className="custom-swiper-prev custom-arrow-button">
           <FaArrowLeftLong className="text-2xl" />
         </button>

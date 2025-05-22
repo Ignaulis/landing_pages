@@ -8,9 +8,9 @@ export default function Info() {
   return (
     <section
       ref={refs.Features}
-      className="flex padding-custom-sides justify-around pb-20 mt-20"
+      className="padding-custom-sides mt-20 flex flex-wrap justify-around gap-8 pb-20 sm:gap-20 lg:flex-nowrap lg:gap-0"
     >
-      <div className="w-[512px] h-[414px]">
+      <div className="h-[414px] w-[512px]">
         <img src={info.img} />
       </div>
       <InfoCard info={info} />

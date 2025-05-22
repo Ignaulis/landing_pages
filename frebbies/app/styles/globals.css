@@ -13,7 +13,7 @@ body {
 
 /* padding for sides */
 .padding-custom-sides {
-    @apply px-30
+    @apply transition-all transform duration-300 lg:px-30 px-8;
 }
 
 /* grey color */
@@ -28,11 +28,11 @@ body {
 
 /* header and paragraph */
 .head {
-    @apply font-bold text-[35px];
+    @apply font-bold lg:text-[35px] md:text-[30px] text-[24px] sm:px-0 px-4;
 }
 
 .para {
-    @apply text-[#4F5665] text-center text-[16px] leading-[30px] w-[550px];
+    @apply text-[#4F5665] text-center text-[16px] leading-[30px] max-w-[550px] sm:px-0 px-4;
 }
 
 
@@ -43,7 +43,7 @@ body {
 
 /* hero and subscribe button */
 .hero-button {
-    @apply bg-[#F53838] cursor-pointer font-medium text-white w-[250px] h-[50px] rounded-xl shadow-2xl shadow-[#F5383880] transition-all duration-300 hover:shadow hover:scale-95 active:scale-90;
+    @apply bg-[#F53838] cursor-pointer font-medium text-white lg:w-[250px] w-[180px] h-[50px] rounded-xl shadow-2xl shadow-[#F5383880] transition-all duration-300 hover:shadow hover:scale-95 active:scale-90;
 }
 
 
@@ -95,4 +95,11 @@ body {
 .hover-map-logos {
 
     @apply transition-all duration-300 hover:scale-105;
+}
+
+
+
+/* transfor */
+.custom-transform {
+    @apply transition-all transform duration-300;
 }

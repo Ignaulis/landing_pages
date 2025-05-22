@@ -1,14 +1,27 @@
 import { ScrollContext } from "@/app/context/scrollContext";
 import { nav } from "@/app/data/nav";
-import Image from "next/image";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 
 export default function Navigation() {
   const { handleScroll } = useContext(ScrollContext);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 850);
+
+  useEffect(() => {
+    const handlewidth = () => {
+      setIsMobile(window.innerWidth <= 850);
+    };
+
+    window.addEventListener("resize", handlewidth);
+    handlewidth();
+
+    return () => {
+      window.removeEventListener("resize", handlewidth);
+    };
+  }, []);
 
   return (
-    <section className="flex justify-between items-center padding-custom-sides pt-6">
-      <Image
+    <section className="padding-custom-sides flex items-center justify-between pt-6">
+      <img
         src={nav.img}
         alt="logo"
         className="cursor-pointer"
@@ -16,11 +29,13 @@ export default function Navigation() {
         height={36}
       />
       {/* navigation */}
-      <nav className="flex gap-10 text-[16px]">
+      <nav
+        className={`flex gap-10 text-[16px] ${isMobile ? "hidden" : "block"}`}
+      >
         {nav.nav.map((e) => (
           <span
             onClick={() => handleScroll(e)}
-            className="text-color cursor-pointer transition-custom"
+            className="text-color transition-custom cursor-pointer"
             key={e}
           >
             {e}
@@ -28,7 +43,9 @@ export default function Navigation() {
         ))}
       </nav>
       {/* signin / signup */}
-      <div className="flex items-center text-[16px] gap-10">
+      <div
+        className={`flex items-center gap-10 text-[16px] ${isMobile ? "hidden" : "block"}`}
+      >
         {nav.sign.map((item) => (
           <span
             key={item}

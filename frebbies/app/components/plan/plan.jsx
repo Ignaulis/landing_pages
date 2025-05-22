@@ -8,13 +8,13 @@ export default function Plan() {
   return (
     <section
       ref={refs.Pricing}
-      className="flex flex-col padding-custom-sides pt-10 gap-20"
+      className="padding-custom-sides flex flex-col gap-20 pt-10"
     >
-      <div className="flex flex-col w-full gap-6 items-center">
+      <div className="flex w-full flex-col items-center gap-6">
         <h2 className="head">{plan.head}</h2>
         <p className="para">{plan.para}</p>
       </div>
-      <div className="flex justify-around">
+      <div className="flex flex-wrap justify-around gap-3 lg:flex-nowrap lg:gap-0">
         {plan.plans.map((e) => (
           <PlanCard key={e.head} data={e} />
         ))}

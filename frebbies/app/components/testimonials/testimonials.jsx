@@ -8,9 +8,9 @@ export default function Testimonials() {
   return (
     <div
       ref={refs.Testimonials}
-      className="flex flex-col items-center mt-20 pb-40 w-full"
+      className="mt-20 flex w-full flex-col items-center pb-40"
     >
-      <div className="flex flex-col w-[500px] text-center items-center gap-6 ">
+      <div className="flex max-w-[500px] flex-col items-center gap-6 text-center">
         <h2 className="head">{testimonial.head}</h2>
         <p className="para">{testimonial.param}</p>
       </div>

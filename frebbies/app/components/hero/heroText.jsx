@@ -1,14 +1,16 @@
 export default function HeroText({ hero }) {
   return (
-    <div className=" gap-12 flex flex-col">
-      <div className="flex flex-col gap-6">
+    <div className="flex flex-col items-center justify-center gap-12 lg:items-start lg:justify-center">
+      <div className="flex w-full flex-col items-center gap-6 lg:items-start">
         {/* header */}
-        <h2 className="text-[50px] w-[500px] leading-[70px] font-medium h-max">
+        <h2 className="custom-transform h-max w-full text-center text-[45px] leading-[60px] font-medium sm:w-4/5 lg:w-[400px] lg:text-start lg:text-[40px] lg:leading-[40px] xl:w-[500px] xl:text-[50px] xl:leading-[70px]">
           {hero.header}
-          <span className="font-bold leading-[30px]">{hero.headerBold}</span>
+          <span className="leading-[30px] font-bold">{hero.headerBold}</span>
         </h2>
         {/* paragraph */}
-        <p className="text-color text-[16px] w-[500px] h-max">{hero.para}</p>
+        <p className="custom-transform text-color h-max w-full text-center text-[14px] sm:w-4/5 lg:w-[500px] lg:text-start lg:text-[16px]">
+          {hero.para}
+        </p>
       </div>
 
       {/* button */}
