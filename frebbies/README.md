@@ -41,7 +41,7 @@ A clean and modern website built based on a Figma design. This project is fully 
 
 ## 📸 Screenshots
 
-![App Preview1](/public/page.png)
+![App Preview1](/frebbies/public/page.png)
 
 ---
 
