@@ -75,3 +75,11 @@ body {
 .border-transition {
     @apply border-2 border-[#DDDDDD] transition-all duration-300 hover:border-2 hover:border-[#F53838];
 }
+
+
+
+/* footer logos */
+
+.custom-footer-logo {
+    @apply flex justify-center items-center rounded-full bg-white shadow-2xl shadow-black/80 p-3;
+}

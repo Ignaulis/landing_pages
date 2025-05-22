@@ -7,6 +7,7 @@ import Plan from "./components/plan/plan";
 import Map from "./components/map/map";
 import Testimonials from "./components/testimonials/testimonials";
 import Subscribe from "./components/subscribe/subscribe";
+import Footer from "./components/footer/footer";
 
 export default function Home() {
 
@@ -22,6 +23,9 @@ export default function Home() {
 
       <Testimonials />
       <Subscribe />
+
+
+      <Footer />
     </>
   );
 }

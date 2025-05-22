@@ -1,7 +1,15 @@
+import { FaTwitter, FaFacebookF } from "react-icons/fa";
+import { TiSocialInstagram } from "react-icons/ti";
+
+
+
 export const footer = {
-    logo: '/Logo.png',
+    logo: '/photos/Logo.svg',
     param: 'LaslesVPN is a private virtual network that has unique features and has high security.',
     cop: '©2020LaslesVPN',
+    fb: FaFacebookF,
+    tw: FaTwitter,
+    In: TiSocialInstagram,
     product: {
         name: 'Product',
         list: [
