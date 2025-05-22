@@ -14,7 +14,7 @@ export default function Plan() {
         <h2 className="head">{plan.head}</h2>
         <p className="para">{plan.para}</p>
       </div>
-      <div className="flex flex-wrap justify-around gap-3 lg:flex-nowrap lg:gap-0">
+      <div className="flex flex-wrap justify-around gap-3 md:gap-4 lg:flex-nowrap">
         {plan.plans.map((e) => (
           <PlanCard key={e.head} data={e} />
         ))}

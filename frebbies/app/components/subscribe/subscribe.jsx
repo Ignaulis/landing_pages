@@ -1,4 +1,5 @@
 import { card } from "@/app/data/card";
+import Link from "next/link";
 
 export default function Subscribe() {
   return (
@@ -11,7 +12,9 @@ export default function Subscribe() {
           {card.param}
         </p>
       </div>
-      <button className="hero-button">{card.button}</button>
+      <Link href={"/soon"}>
+        <button className="hero-button">{card.button}</button>
+      </Link>
     </section>
   );
 }

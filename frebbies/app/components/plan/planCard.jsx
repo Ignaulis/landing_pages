@@ -1,14 +1,15 @@
 import { FaCheck } from "react-icons/fa";
+import Link from "next/link";
 
 export default function PlanCard({ data }) {
   return (
-    <div className="flex flex-col justify-around h-[760px] w-[330px] bg-white rounded-2xl border-transition">
+    <div className="border-transition flex h-[760px] w-[330px] flex-col justify-around rounded-2xl bg-white">
       <div className="flex flex-col gap-10">
         <div className="flex flex-col items-center gap-4">
-          <div className="w-[144px] h-[163px]">
+          <div className="h-[163px] w-[144px]">
             <img src={data.img} alt={data.priceBold} />
           </div>
-          <h4 className="font-bold text-[18px]">{data.head}</h4>
+          <h4 className="text-[18px] font-bold">{data.head}</h4>
         </div>
         <div className="flex flex-col gap-6 pl-16">
           {data.checks.map((e) => (
@@ -19,12 +20,14 @@ export default function PlanCard({ data }) {
           ))}
         </div>
       </div>
-      <div className="flex flex-col gap-6 items-center">
-        <span className="font-bold text-[25px]">
+      <div className="flex flex-col items-center gap-6">
+        <span className="text-[25px] font-bold">
           {data.priceBold}
           <span className="font-light">{data.price}</span>
         </span>
-        <button className="button-small">{data.button}</button>
+        <Link href={"/soon"} className="button-small">
+          {data.button}
+        </Link>
       </div>
     </div>
   );

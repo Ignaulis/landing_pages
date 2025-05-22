@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HeroText({ hero }) {
   return (
     <div className="flex flex-col items-center justify-center gap-12 lg:items-start lg:justify-center">
@@ -14,9 +16,9 @@ export default function HeroText({ hero }) {
       </div>
 
       {/* button */}
-      <div className="">
+      <Link href={"/soon"}>
         <button className="hero-button">{hero.button}</button>
-      </div>
+      </Link>
     </div>
   );
 }

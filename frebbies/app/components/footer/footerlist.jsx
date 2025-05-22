@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footerlist({ data }) {
   return (
     <div className="flex flex-col gap-1 sm:gap-3">
@@ -5,13 +7,13 @@ export default function Footerlist({ data }) {
         {data.name}
       </span>
       {data.list.map((e) => (
-        <a
-          href={`#${e}`}
+        <Link
+          href={`/soon`}
           className="footer-hover text-[12px] text-[#4F5665] sm:text-[16px]"
           key={e}
         >
           {e}
-        </a>
+        </Link>
       ))}
     </div>
   );
