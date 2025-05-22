@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Modern & Minimalist Figma Website – Fully Responsive Design
 
-## Getting Started
+A clean and modern website built based on a Figma design. This project is fully responsive across mobile, tablet, and desktop devices, offering a smooth and elegant user experience. Designed with simplicity in mind, it uses modern web technologies and animation libraries to enhance interactivity without compromising minimalism.
 
-First, run the development server:
+## 🚀 Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js** – React framework for server-side rendering and static site generation  
+- **React** – Library for building user interfaces  
+- **Framer Motion** – Animation library for React  
+- **Swiper** – Modern mobile touch slider  
+- **React Icons** – Icon library for React  
+
+---
+
+## 💡 Features
+
+- 🎨 **Minimalist & Clean Design**: Sleek and modern layout based on a Figma prototype  
+- 📱 **Fully Responsive**: Optimized for mobile, tablet, and desktop screens  
+- 🚀 **Smooth Animations**: Subtle and professional motion effects with Framer Motion  
+- 🖼️ **Interactive Slider**: Swiper integration for smooth and touch-friendly carousels  
+- 🎯 **Icon Integration**: Enhanced UI with a variety of icons using React Icons  
+- ⚡ **Built with Next.js**: Fast, SEO-friendly framework leveraging modern React features  
+
+---
+
+## 📦 Dependencies
+
+```json
+ "dependencies": {
+    "framer-motion": "^12.12.1",
+    "next": "15.3.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "swiper": "^11.2.7"
+  }
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📸 Screenshots
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![App Preview1](frebbies/public/page.png)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Installation & Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/Ignaulis/landing_pages.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Install dependencies**  
+   ```bash
+   cd frebbies
+   npm install
+   ```
 
-## Deploy on Vercel
+3. **Start the development server**  
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
